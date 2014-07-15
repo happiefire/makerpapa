@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Makerpapa 创客老爹
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+    link(rel="stylesheet", type="text/css", href="css/bootstrap.min.css")
+    link(rel="stylesheet", type="text/css", href="css/styles.css")
+
+    block headLinks
+    block headScripts
+  body
+    include includes/header
+      
+    block content
+
+    include includes/footer
+    
+    script(type="text/javascript", src="js/vendor/jquery-1.11.0.min.js")
+    script(type="text/javascript", src="js/vendor/bootstrap.min.js")
+    script(type="text/javascript", src="js/main.js")
+
+    block bodyScripts

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Makerpapa 创客老爹</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <header id="top" role="banner" class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".bs-navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">Makerpapa</a>
+        </div>
+        <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="hey" href="/">首页</a></li>
+            <li><a href="/howtos.html">教程</a></li>
+            <li><a href="/about.html">关于我们</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div style="height: 50px;" class="placeholder"></div>
+    <div class="container">
+      <h1>Haze霾---穿戴式空气质量探测器</h1>
+    </div>
+    <section class="detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="pane pane-overview">
+              <div style="background-image: url(img/sample-0.jpg)" class="head-img"></div>
+              <div class="pane-container">
+                <h3>简介</h3>
+                <p>
+                  Haze霾是一款可穿戴式空气质量探测器，它是一声对中国严峻的空气污染问题的高声疾呼。Haze霾通过使用者穿戴上空气侦测器行走在城市中侦测各处不同的污染水平，把空气质量问题转变为一个核心话题，并通过人们对空气质量的关键性讨论去鼓励人们重新思考空气污染问题。
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pane pane-meta">
+              <div class="meta-info-wrap">
+                <div class="meta-info">
+                  <div class="meta-unit meta-unit-1">
+                    <div class="meta-view">
+                      <div class="meta-num">1167</div>
+                      <div class="meta-text"><i class="glyphicon glyphicon-eye-open"></i> 浏览</div>
+                    </div>
+                  </div>
+                  <div class="meta-unit meta-unit-2">
+                    <div class="meta-fav">
+                      <div class="meta-num">105</div>
+                      <div class="meta-text"><i class="glyphicon glyphicon-heart"></i> 赞</div>
+                    </div>
+                  </div>
+                  <div class="meta-unit meta-unit-3">
+                    <div class="meta-share">
+                      <div class="meta-num">21</div>
+                      <div class="meta-text"><i class="glyphicon glyphicon-bookmark"></i> 收藏</div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="pane-container">
+                  <div class="author-info">
+                    <div class="author-unit author-unit-1">
+                      <div class="author-avatar"><img src="img/author-0.jpg" class="avatar-md"></div>
+                    </div>
+                    <div class="author-unit author-unit-2">
+                      <div class="author-name"><a>pcheng1</a></div>
+                    </div>
+                    <div class="author-unit author-unit-3">
+                      <div class="author-follow">
+                        <div class="follow-btn btn btn-default">关注</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="pane-container">
+                  <div class="share"><i class="glyphicon glyphicon-share-alt"></i> 分享到：</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="pane pane-steps">
+              <div class="pane-container">
+                <div class="each-step">
+                  <div class="step-img"><img src="img/step-1.jpg"></div>
+                  <div class="step-text">
+                    <h3>步骤1: 第一个原型 First Prototye</h3>
+                    <p>
+                      第一次尝试制作Haze的原型，我采用了3D打印技术和蓝牙通信。<br>
+                      我用3D打印机按照鼻子的形状制作了第一个模型。我还尝试用ioio板制作一个和手机可以蓝牙通信的空气质量侦测系统。<br>
+                      <br>
+                      总结：
+                      <ol>
+                        <li>这个模型的尺寸比较小，只有能包裹住鼻子，下一步应该制作更大尺寸的原型。</li>
+                        <li>蓝牙通信功能让收集空气质量并存储在手机成为可能。但是Haze的初衷并不是一个强调功能性的工业级产品，而是艺术品。我想我会把这些功能留到下一阶段再去使用。<br></li>
+                      </ol>
+                    </p>
+                  </div>
+                </div>
+                <div class="each-step">
+                  <div class="step-img"><img src="img/step-2.jpg"></div>
+                  <div class="step-text">
+                    <h3>步骤2: 准备材料 Material</h3>
+                    <p>
+                      下面我开始正式介绍制作Haze的过程。<br><br>
+                      第一步是准备材料，Haze制作所需要的主要材料有：<br>
+                      <ol>
+                        <li>铁丝网（废弃的最佳）</li>
+                        <li>Adafruit Trinket 3.3V Logic</li>
+                        <li>Adafruit NeoPixel Digital RGB LED Weatherproof Strip 60 LED -1m - WHITE</li>
+                        <li>Optical Dust Sensor - GP2Y1010AU0F</li>
+                        <li>熟石膏绷带</li>
+                      </ol>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

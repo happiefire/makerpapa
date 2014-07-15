@@ -1,0 +1,1 @@
+// $('.card .head-img').width;

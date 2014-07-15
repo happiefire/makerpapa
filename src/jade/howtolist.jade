@@ -1,0 +1,36 @@
+mixin card-img(src)
+  .card-img(style="background-image: url("+ src +")")
+
+extend ./base
+
+block content
+  
+  section.landing
+    .color-overlay
+    .content-wrap
+      .container
+        .hero-heading-wrap
+          .hero-heading 
+            h1 常「做」不死
+        .hero-text-wrap
+          .hero-text 
+            p.lead 你想做什么？
+    
+
+  section.howto-list
+    .container
+      h1 制作教程
+      p
+      .row
+        .col-md-4
+          .card.item
+            +card-img("img/sample-1.jpg")
+            .card-content
+              h3 hello
+              small 作者：diandian
+        .col-md-4
+          .card.item
+            +card-img("img/sample-2.jpg")
+        .col-md-4
+          .card.item
+            +card-img("img/sample-3.jpg")

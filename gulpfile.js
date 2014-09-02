@@ -15,7 +15,7 @@ gulp.task("jade", function(){
 
 gulp.task('sass', function(){
   return gulp.src(['src/sass/**/*.scss', 'src/sass/**/*.sass'])
-    .pipe($.rubySass({
+    .pipe($.sass({
       style: 'expanded',
       precision: 10,
       loadPath: ['src/sass']
@@ -33,7 +33,7 @@ gulp.task('copy', function() {
 });
 
 
-gulp.task('serve', function(){
+gulp.task('server', function(){
   browserSync({
     notify: false,
     server: {
@@ -50,3 +50,4 @@ gulp.task('serve', function(){
 
 gulp.task('clean', del.bind(null, ['build']));
 gulp.task('default', ['copy', 'jade', 'sass']);
+gulp.task('serve', ['default', 'server']);

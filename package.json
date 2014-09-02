@@ -2,13 +2,13 @@
   "devDependencies": {
     "browser-sync": "^1.1.2",
     "del": "^0.1.1",
-    "gulp": "^3.8.5",
+    "gulp": "latest",
     "gulp-autoprefixer": "^0.0.7",
     "gulp-jade": "latest",
     "gulp-cache": "^0.2.0",
     "gulp-changed": "^0.4.0",
     "gulp-load-plugins": "^0.5.3",
-    "gulp-ruby-sass": "^0.5.0",
+    "gulp-sass": "latest",
     "gulp-size": "^0.4.0"
   },
   "engines": {

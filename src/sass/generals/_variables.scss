@@ -1,0 +1,169 @@
+
+
+
+$radius: 4px;
+$border-radius: $radius;
+
+
+// color schemes:
+
+$gray-0: lighten(#000, 97%) !default;
+$gray-1: lighten(#000, 93.5%) !default; // #eee
+$gray-2: lighten(#000, 90%) !default; 
+$gray-3: lighten(#000, 33.5%) !default; // #555
+$gray-4: lighten(#000, 20%) !default;   // #333
+$gray-5: lighten(#000, 13.5%) !default; // #222
+
+$gray-light: lighten(#000, 46.7%) !default; // #777
+$gray-lighter: $gray-1;
+
+$theme-color: #ff9d42; //orange
+$body-bg: $gray-0;
+$bg-striped: $gray-0;
+
+
+
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$text-color:            #333 !default;
+$link-color:            $theme-color !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size:               14px !default;
+$font-size-large:         ceil(($font-size * 1.25)) !default;
+$font-size-small:         ceil(($font-size * 0.85)) !default;
+
+$font-size-h1:            2em;
+$font-size-h2:            1.75em;
+$font-size-h3:            1.5em;
+$font-size-h4:            1.25em;
+$font-size-h5:            $font-size;
+$font-size-h6:            0.85em;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.5 !default; // 20/14
+$line-height: 1.5;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    600 !default;
+$headings-line-height:    1.2 !default;
+$headings-color:          inherit !default;
+
+
+//** Horizontal offset for forms and lists.
+$component-offset-horizontal: 180px !default;
+$text-muted:                  $gray-light !default;
+$abbr-border-color:           $gray-light !default;
+$headings-small-color:        $gray-light !default;
+$blockquote-small-color:      $gray-light !default;
+$blockquote-font-size:        ($font-size * 1.25) !default;
+$blockquote-border-color:     $gray-lighter !default;
+$page-header-border-color:    $gray-lighter !default;
+$hr-border:                   $gray-lighter !default;
+
+
+
+
+
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             ((720px + $grid-gutter-width)) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((940px + $grid-gutter-width)) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
+
+
+
+
+
+
+
+
+//== Navbar
+//
+
+$navbar-height: 52px;
+
+
+
+
+
+// Buttons
+$btn-color: $theme-color;
+$btn-padding-vrt: 8px;
+$btn-padding-hrz: 16px;

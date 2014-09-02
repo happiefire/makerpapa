@@ -14,7 +14,7 @@ gulp.task("jade", function(){
 
 
 gulp.task('sass', function(){
-  return gulp.src(['src/sass/**/*.scss'])
+  return gulp.src(['src/sass/**/*.scss', 'src/sass/**/*.sass'])
     .pipe($.rubySass({
       style: 'expanded',
       precision: 10,
@@ -42,9 +42,9 @@ gulp.task('serve', function(){
   });
 
   gulp.watch(['src/jade/**/*.jade'], ['jade', reload]);
-  gulp.watch(['src/sass/**/*.scss'], ['sass', reload]);
+  gulp.watch(['src/sass/**/*.scss', 'src/sass/**/*.sass'], ['sass', reload]);
   gulp.watch(['build/css/**/*.css'], reload);
-  gulp.watch(['src/img/**/*', 'src/js/**/*'], reload);
+  gulp.watch(['src/img/**/*', 'src/js/**/*'], ['copy', reload]);
 });
 
 

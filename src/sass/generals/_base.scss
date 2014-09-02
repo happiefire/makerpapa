@@ -2,6 +2,7 @@
 
 
 $radius: 4px;
+$border-radius: $radius;
 
 
 // color schemes:
@@ -18,6 +19,7 @@ $gray-lighter: $gray-1;
 
 $theme-color: #ff9d42; //orange
 $body-bg: $gray-0;
+$bg-striped: $gray-0;
 
 
 
@@ -51,6 +53,7 @@ $font-size-h6:            0.85em;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.5 !default; // 20/14
+$line-height: 1.5;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size * $line-height-base)) !default; // ~20px
 
@@ -141,3 +144,26 @@ $container-md:                 $container-desktop !default;
 $container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
+
+
+
+
+
+
+
+
+
+
+//== Navbar
+//
+
+$navbar-height: 52px;
+
+
+
+
+
+// Buttons
+$btn-color: $theme-color;
+$btn-padding-vrt: 8px;
+$btn-padding-hrz: 16px;

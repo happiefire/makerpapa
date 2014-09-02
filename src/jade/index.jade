@@ -1,93 +1,79 @@
-mixin head-img(src)
-  .head-img(style="background-image: url("+ src +")")
-
 extend ./base
 
 block content
-  .placeholder(style="height: 50px;")
-  .container
-    h1 Haze霾---穿戴式空气质量探测器
-  section.detail
+  
+  section.home-section#landing.home-section
+    .head-image.parallax-me
+      .color-overlay
+      .content-wrap
+        .container
+          .hero-heading-wrap
+            .hero-heading 
+              h1 ♥ 爱上制作
+          .hero-text-wrap
+            .hero-text 
+              p.lead 你想做什么？
+    
+
+
+
+  section.home-section#landing-words
+    .container.text-center
+      h1 “创造非难事”
+      p.lead 老爹和你分享知识，带你动手学习、爱上制作
+
+
+
+
+
+  section.home-section#howto-section.striped
+    .head-image.parallax-me
+      .color-overlay
+      .content-wrap
+        .container
+          .hero-heading-wrap
+            .hero-heading 
+              h1 教程 | How to
     .container
+      h2.section-sub-heading 
+        |带你开始动手学习 爱上制作
       .row
-        .col-md-8
-          .pane.pane-overview
-            +head-img("img/sample-0.jpg")
-            .pane-container
-              h3 简介
-              p.
-                Haze霾是一款可穿戴式空气质量探测器，它是一声对中国严峻的空气污染问题的高声疾呼。Haze霾通过使用者穿戴上空气侦测器行走在城市中侦测各处不同的污染水平，把空气质量问题转变为一个核心话题，并通过人们对空气质量的关键性讨论去鼓励人们重新思考空气污染问题。
-
         .col-md-4
-          .pane.pane-meta
-            .meta-info-wrap
-              .meta-info
-                .meta-unit.meta-unit-1
-                  .meta-view
-                    .meta-num
-                      | 1167
-                    .meta-text
-                      i.glyphicon.glyphicon-eye-open 
-                      |  浏览
-                .meta-unit.meta-unit-2
-                  .meta-fav
-                    .meta-num
-                      | 105
-                    .meta-text
-                      i.glyphicon.glyphicon-heart
-                      |  赞
-                .meta-unit.meta-unit-3
-                  .meta-share
-                    .meta-num
-                      | 21
-                    .meta-text
-                      i.glyphicon.glyphicon-bookmark
-                      |  收藏
-              hr
-              .pane-container
-                .author-info
-                  .author-unit.author-unit-1
-                    .author-avatar
-                      img.avatar-md(src="img/author-0.jpg")
-                  .author-unit.author-unit-2
-                    .author-name
-                      a pcheng1
-                  .author-unit.author-unit-3
-                    .author-follow
-                      .follow-btn.btn.btn-default 关注
-              hr
-              .pane-container
-                .share
-                  i.glyphicon.glyphicon-share-alt
-                  |  分享到：
+          .card.item
+            +card-img("img/sample-1.jpg")
+            .card-content
+              h3 hello
+              small 作者：diandian
+        .col-md-4
+          .card.item
+            +card-img("img/sample-2.jpg")
+        .col-md-4
+          .card.item
+            +card-img("img/sample-3.jpg")
+      div.text-center
+        .btn
+          |更多教程
 
-        .col-md-8
-          .pane.pane-steps
-            .pane-container
-              .each-step
-                .step-img
-                  img(src="img/step-1.jpg")
-                .step-text
-                  h3 步骤1: 第一个原型 First Prototye
-                  p
-                    |第一次尝试制作Haze的原型，我采用了3D打印技术和蓝牙通信。<br>
-                    |我用3D打印机按照鼻子的形状制作了第一个模型。我还尝试用ioio板制作一个和手机可以蓝牙通信的空气质量侦测系统。<br>
-                    |<br>
-                    |总结：
-                    ol 
-                      li 这个模型的尺寸比较小，只有能包裹住鼻子，下一步应该制作更大尺寸的原型。
-                      li 蓝牙通信功能让收集空气质量并存储在手机成为可能。但是Haze的初衷并不是一个强调功能性的工业级产品，而是艺术品。我想我会把这些功能留到下一阶段再去使用。<br>
-              .each-step
-                .step-img
-                  img(src="img/step-2.jpg")
-                .step-text
-                  h3 步骤2: 准备材料 Material
-                  p
-                    |下面我开始正式介绍制作Haze的过程。<br><br>
-                    |第一步是准备材料，Haze制作所需要的主要材料有：<br>
-                    ol 
-                      li 铁丝网（废弃的最佳）
-                      li Adafruit Trinket 3.3V Logic
-                      li Adafruit NeoPixel Digital RGB LED Weatherproof Strip 60 LED -1m - WHITE
-                      li Optical Dust Sensor - GP2Y1010AU0F
-                      li 熟石膏绷带
+
+
+
+  //- section.home-section#sharing-section
+  //-   .head-image
+  //-     .color-overlay
+  //-     .content-wrap
+  //-       .container
+  //-         .hero-heading-wrap
+  //-           .hero-heading 
+  //-             h1 Share | 分享
+  //-   .container
+  //-     h1 分享 <small>Sharing</small>
+  //-     p.lead.text-center 
+  //-       h1.text-center 与你分享创造的知识 快乐 热情 
+
+
+
+
+
+  //- section.home-section#activity-section.striped
+  //-   .container
+  //-     h1 活动 <small>Activity</small>

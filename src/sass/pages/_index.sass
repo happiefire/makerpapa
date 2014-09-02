@@ -1,0 +1,79 @@
+#top 
+  margin-bottom: 0
+  z-index: 1
+
+.home-section
+  padding-bottom: 30px
+
+.section-sub-heading
+  text-align: center
+  margin-bottom: 50px
+
+
+
+.head-image
+  color: #fff
+  position: relative
+  height: 400px
+  margin-bottom: 50px
+  
+  background-size: cover
+  background-position: 50% 50%
+  background-repeat: no-repeat
+
+  .color-overlay 
+    position: absolute
+    @include stretch-to-edge
+    background-color: rgba(0,0,0,0.3)
+  
+  .content-wrap 
+    position: absolute
+    @include stretch-to-edge
+    .container 
+      height: 100%
+      .hero-heading-wrap, .hero-text-wrap  
+        display: table 
+        width: 100%
+        &>div 
+          display: table-cell 
+          vertical-align: middle
+          text-align: center
+      
+      .hero-heading-wrap
+        height: 100%
+        h1 
+          font-size: 3*$font-size
+          line-height: 1
+          font-weight: 800
+          border: 10px solid #fff
+          display: inline-block
+          padding: 30px
+        
+      
+  
+#landing
+  margin-top: $navbar-height * -1
+  .head-image
+    background-image: url("../img/landing.jpg")
+    height: 650px
+    margin-bottom: 0
+    .hero-heading-wrap
+      height: 85%
+    .hero-text-wrap
+      height: 15%
+
+#landing-words 
+  @include padding-tb(100px)
+  background-color: #fff
+
+
+#howto-section
+  .head-image
+    background-image: url("../img/landing.jpg")
+
+
+// #sharing-section
+
+
+// #activity-section
+

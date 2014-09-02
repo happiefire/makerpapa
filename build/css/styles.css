@@ -479,7 +479,6 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #333333;
-  background-color: #f7f7f7;
 }
 
 input,
@@ -765,8 +764,58 @@ address {
   line-height: 1.5;
 }
 
+body {
+  background-color: white;
+}
+
+.striped {
+  background-color: #f7f7f7;
+}
+
+button, .btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  height: 39px;
+  color: #ff9d42;
+  border-color: #ff9d42;
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  color: white;
+  text-decoration: none;
+  background-color: #ffa654;
+}
+button:active, button.active, .btn:active, .btn.active {
+  background-color: #ff9430;
+}
+button.disabled, button[disabled], fieldset[disabled] button, .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  box-shadow: none;
+  outline: white solid 1px;
+  outline-offset: -4px;
+}
+
+.block-btn {
+  width: 100%;
+}
+
 #top.navbar {
-  background-color: #fff;
+  background-color: transparent;
+}
+#top.navbar a:hover {
+  background-color: transparent;
 }
 
 .card, .pane {
@@ -877,19 +926,28 @@ address {
 
 #top {
   margin-bottom: 0;
+  z-index: 1;
 }
 
-section.landing {
-  color: #fff;
-  margin-bottom: 0;
+.home-section {
+  padding-bottom: 30px;
+}
+
+.section-sub-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.head-image {
+  color: white;
   position: relative;
-  height: 500px;
-  background-image: url("../img/landing.jpg");
+  height: 400px;
+  margin-bottom: 50px;
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-section.landing .color-overlay {
+.head-image .color-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -897,41 +955,81 @@ section.landing .color-overlay {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
-section.landing .content-wrap {
+.head-image .content-wrap {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-section.landing .content-wrap .container {
+.head-image .content-wrap .container {
   height: 100%;
 }
-section.landing .content-wrap .container .hero-heading-wrap, section.landing .content-wrap .container .hero-text-wrap {
+.head-image .content-wrap .container .hero-heading-wrap, .head-image .content-wrap .container .hero-text-wrap {
   display: table;
   width: 100%;
 }
-section.landing .content-wrap .container .hero-heading-wrap > div, section.landing .content-wrap .container .hero-text-wrap > div {
+.head-image .content-wrap .container .hero-heading-wrap > div, .head-image .content-wrap .container .hero-text-wrap > div {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-section.landing .content-wrap .container .hero-heading-wrap {
-  height: 80%;
+.head-image .content-wrap .container .hero-heading-wrap {
+  height: 100%;
 }
-section.landing .content-wrap .container .hero-heading-wrap h1 {
+.head-image .content-wrap .container .hero-heading-wrap h1 {
   font-size: 42px;
   line-height: 1;
   font-weight: 800;
-  border: 10px solid #fff;
+  border: 10px solid white;
   display: inline-block;
   padding: 30px;
 }
-section.landing .content-wrap .container .hero-text-wrap {
-  height: 20%;
+
+#landing {
+  margin-top: -52px;
+}
+#landing .head-image {
+  background-image: url("../img/landing.jpg");
+  height: 650px;
+  margin-bottom: 0;
+}
+#landing .head-image .hero-heading-wrap {
+  height: 85%;
+}
+#landing .head-image .hero-text-wrap {
+  height: 15%;
 }
 
-section.howto-list {
-  padding-top: 30px;
-  padding-bottom: 30px;
+#landing-words {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+#howto-section .head-image {
+  background-image: url("../img/landing.jpg");
+}
+
+#sec-1, #sec-3 {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sec-2 {
+  box-shadow: 0px 0px 10px #ddd;
+  background-color: transparent;
+}
+.sec-2 .container {
+  height: 200px;
+}
+
+#sec-1 {
+  background-image: url("http://placehold.it/1000x500");
+}
+
+#sec-3 {
+  background-image: url("http://placehold.it/1500x500");
 }

@@ -1,0 +1,21 @@
+#sec-1, #sec-3 {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sec-2 {
+  box-shadow: 0px 0px 10px #ddd;
+  background-color: transparent;
+  .container {
+    height: 200px;
+  }
+}
+
+#sec-1 {
+  background-image: url('http://placehold.it/1000x500');
+}
+#sec-3 {
+  background-image: url('http://placehold.it/1500x500');
+}

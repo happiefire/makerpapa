@@ -3,11 +3,14 @@
 @import "generals/mixins";
 @import "generals/responsive";
 @import "generals/typography";
+@import "generals/general-style";
 
+@import "components/button";
 @import "components/header";
 @import "components/card";
 @import "components/avatar";
 @import "components/author";
 
-@import "pages/howtolist";
+@import "pages/index";
 @import "pages/howto";
+@import "pages/parallex";
